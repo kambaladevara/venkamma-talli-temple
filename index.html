@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title> వెంకమ్మ తల్లి ఆలయం - కోమలి</title>
+<title>వెంకమ్మ తల్లి ఆలయం - కోమలి</title>
 <style>
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans Telugu', serif;
     margin: 0; padding: 0;
     background: #fff8f0;
     color: #4b2e05;
@@ -19,13 +19,7 @@
   }
   header h1 {
     margin: 0;
-    font-size: 2.2rem;
-  }
-  header h2 {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: normal;
-    font-family: 'Noto Sans Telugu', serif;
+    font-size: 2.4rem;
   }
   main {
     max-width: 900px;
@@ -40,24 +34,6 @@
     border-bottom: 2px solid #a64d00;
     padding-bottom: 0.3rem;
   }
-  .bilingual {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .lang {
-    flex: 1 1 45%;
-    background: #f9f2e7;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px #ccc;
-    min-width: 280px;
-  }
-  .lang.telugu {
-    font-family: 'Noto Sans Telugu', serif;
-    font-size: 1.1rem;
-    line-height: 1.5;
-  }
   img.temple-photo {
     max-width: 100%;
     border-radius: 10px;
@@ -69,16 +45,7 @@
     color: white;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
-  }
-  /* Responsive */
-  @media (max-width: 600px) {
-    .bilingual {
-      flex-direction: column;
-    }
-    .lang {
-      flex: 1 1 100%;
-    }
+    font-size: 1rem;
   }
   iframe {
     width: 100%;
@@ -87,6 +54,12 @@
     border-radius: 8px;
     box-shadow: 0 2px 5px #ccc;
   }
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  }
 </style>
 <!-- Link to Telugu font -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap" rel="stylesheet" />
@@ -94,69 +67,44 @@
 <body>
 
 <header>
-  <h1>Venkamma Talli Temple - Komali</h1>
-  <h2>వెంకమ్మ తల్లి ఆలయం - కోమలి</h2>
+  <h1>వెంకమ్మ తల్లి ఆలయం - కోమలి</h1>
 </header>
 
 <main>
 
   <section>
-    <h3>About the Temple / ఆలయం గురించి</h3>
-    <div class="bilingual">
-      <div class="lang eng">
-        <p>Venkamma Talli Temple is a sacred temple located in Komali village, Andhra Pradesh. Devotees visit to seek blessings, especially during festivals.</p>
-      </div>
-      <div class="lang telugu">
-        <p>వెంకమ్మ తల్లి ఆలయం ఆంధ్రప్రదేశ్‌లోని కోమలి గ్రామంలో ఉన్న పవిత్రమైన ఆలయం. పండుగల సమయంలో భక్తులు ఆశీర్వాదాలు పొందడానికి సందర్శిస్తారు.</p>
-      </div>
-    </div>
+    <h3>ఆలయం గురించి</h3>
+    <p>వెంకమ్మ తల్లి ఆలయం ఆంధ్రప్రదేశ్‌లోని కోమలి గ్రామంలో ఉన్న పవిత్రమైన ఆలయం. పండుగల సమయంలో భక్తులు ఆశీర్వాదాలు పొందడానికి సందర్శిస్తారు.</p>
   </section>
 
   <section>
-    <h3>Temple Photos / ఆలయ చిత్రాలు</h3>
-    <p>Upload your temple photos to the <strong>photos</strong> folder and add image tags here:</p>
+    <h3>ఆలయ చిత్రాలు</h3>
+    <p>మీ ఆలయ చిత్రాలను <strong>photos</strong> ఫోల్డర్లో అప్‌లోడ్ చేసి, ఇక్కడ చిత్రం లింకులను జోడించండి:</p>
     <div>
-      <!-- Replace src with your uploaded image link -->
-      <img class="temple-photo" src="photos/photo1.jpg" alt="Venkamma Talli Temple Photo 1" />
-      <img class="temple-photo" src="photos/photo2.jpg" alt="Venkamma Talli Temple Photo 2" />
+      <!-- ఇక్కడ మీ చిత్రాల లింకులు ఇవ్వండి -->
+      <img class="temple-photo" src="photos/photo1.jpg" alt="వెంకమ్మ తల్లి ఆలయం చిత్రం 1" />
+      <img class="temple-photo" src="photos/photo2.jpg" alt="వెంకమ్మ తల్లి ఆలయం చిత్రం 2" />
     </div>
   </section>
 
   <section>
-    <h3>Location / స్థలం</h3>
-    <div class="bilingual">
-      <div class="lang eng">
-        <p>Komali village, Andhra Pradesh, India.</p>
-        <p>Nearby towns include Nidadavolu and Rajahmundry.</p>
-      </div>
-      <div class="lang telugu">
-        <p>కోమలి గ్రామం, ఆంధ్రప్రదేశ్, భారతదేశం.</p>
-        <p>అడ్డంపట్టు, రాజమండ్రి సమీప పట్టణాలు.</p>
-      </div>
-    </div>
-    <h3>Map / నక్షేపటము</h3>
-    <!-- Google Map iframe - centered on Komali village -->
+    <h3>స్థలం</h3>
+    <p>కోమలి గ్రామం, ఆంధ్రప్రదేశ్, భారతదేశం.</p>
+       <h3>నక్షేపటము</h3>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.367793773401!2d81.6581907!3d16.8534543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35c1d8b37d4cf3%3A0x2c683666d4108af5!2sKomali%2C%20Andhra%20Pradesh%20534421%2C%20India!5e0!3m2!1sen!2sus!4v1693521228465!5m2!1sen!2sus"
       allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
   <section>
-    <h3>Contact / సంప్రదింపు</h3>
-    <div class="bilingual">
-      <div class="lang eng">
-        <p>Please contact the temple committee or village elders for any inquiries.</p>
-      </div>
-      <div class="lang telugu">
-        <p>ఏమైనా ప్రశ్నల కోసం ఆలయ కమిటీ లేదా గ్రామ పెద్దలతో సంప్రదించండి.</p>
-      </div>
-    </div>
+    <h3>సంప్రదింపు</h3>
+    <p>ఏమైనా ప్రశ్నల కోసం ఆలయ కమిటీ లేదా గ్రామ పెద్దలతో సంప్రదించండి.</p>
   </section>
 
 </main>
 
 <footer>
-  &copy; 2025 Venkamma Talli Temple, Komali
+  &copy; 2025 వెంకమ్మ తల్లి ఆలయం, కోమలి
 </footer>
 
 </body>
