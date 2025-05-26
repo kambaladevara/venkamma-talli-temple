@@ -1,2 +1,2 @@
-# venkamma-talli-temple
-venkamma-talli-temple
+# Venkamma Talli ( Kambala Devara)
+
