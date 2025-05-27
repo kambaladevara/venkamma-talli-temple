@@ -1,74 +1,177 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>వెంకమ్మ తల్లి దేవస్థానం | Venkamma Talli Temple</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Noto Sans Telugu', sans-serif, Arial, sans-serif;
+      background: #fff8e1;
+      color: #5d4037;
+    }
+    header {
+      background: #fbc02d;
+      text-align: center;
+      padding: 30px 15px;
+      box-shadow: 0 4px 8px rgba(251,192,45,0.5);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    header small {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #6d4c41dd;
+      display: block;
+      margin-top: 6px;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px 50px;
+    }
+    section {
+      margin-bottom: 40px;
+      background: #fff3e0;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px #d7ccc8cc;
+    }
+    h2 {
+      color: #bf360c;
+      margin-bottom: 15px;
+      font-weight: 700;
+      border-bottom: 3px solid #f57c00;
+      padding-bottom: 6px;
+    }
+    p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .photos img {
+      max-width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px #a1887f88;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .photos img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #bf360ccc;
+    }
+    .audio-button {
+      text-align: center;
+      margin: 20px 0;
+    }
+    button {
+      background-color: #f57c00;
+      border: none;
+      padding: 14px 36px;
+      font-size: 1.25rem;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px #bf360caa;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e65100;
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #d7ccc8cc;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      color: #6d4c41aa;
+      border-top: 1px solid #fbc02d88;
+      margin-top: 30px;
+    }
+    @media(max-width: 600px){
+      .photos img {
+        max-width: 90vw;
+      }
+      button {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
 
-export default function VenkamaTalliHomePage() {
-  return (
-    <div style={{ fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", background: "linear-gradient(135deg, #fef3c7 0%, #f97316 100%)", minHeight: "100vh", color: "#4b2e05", padding: "2rem" }}>
-      
-      {/* Header */}
-      <header style={{ textAlign: "center", marginBottom: "3rem" }}>
-        <h1 style={{ fontSize: "3rem", fontWeight: "700", textShadow: "2px 2px 6px rgba(0,0,0,0.15)" }}>
-          🙏 Welcome to Venkama Talli Temple Komali 🙏
-        </h1>
-        <p style={{ fontSize: "1.25rem", maxWidth: "600px", margin: "1rem auto", lineHeight: "1.6" }}>
-          A sacred place to find peace, blessings, and connect with the divine mother goddess, Venkama Talli.
-        </p>
-      </header>
-      
-      {/* About Section */}
-      <section style={{ maxWidth: "700px", margin: "0 auto 4rem auto", background: "rgba(255,255,255,0.85)", borderRadius: "12px", padding: "1.5rem", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
-        <h2 style={{ color: "#b45309", fontSize: "2rem", marginBottom: "1rem" }}>About Venkama Talli</h2>
-        <p style={{ fontSize: "1.125rem", lineHeight: "1.6" }}>
-          Venkama Talli is the divine mother goddess worshipped for protection, prosperity, and peace. 
-          The temple has been a spiritual center for generations, fostering devotion and community bonding.
-        </p>
-      </section>
-      
-      {/* Timings */}
-      <section style={{ maxWidth: "700px", margin: "0 auto 4rem auto", textAlign: "center" }}>
-        <h2 style={{ color: "#b45309", fontSize: "2rem", marginBottom: "1rem" }}>Temple Timings</h2>
-        <div style={{ display: "flex", justifyContent: "center", gap: "3rem", fontWeight: "600" }}>
-          <div style={{ background: "white", padding: "1rem 2rem", borderRadius: "10px", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
-            Morning Pooja<br />
-            <span style={{ color: "#d97706", fontSize: "1.25rem" }}>6:00 AM - 8:00 AM</span>
-          </div>
-          <div style={{ background: "white", padding: "1rem 2rem", borderRadius: "10px", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
-            Evening Pooja<br />
-            <span style={{ color: "#d97706", fontSize: "1.25rem" }}>6:00 PM - 8:00 PM</span>
-          </div>
-        </div>
-      </section>
-      
-      {/* Gallery */}
-      <section style={{ maxWidth: "900px", margin: "0 auto 4rem auto" }}>
-        <h2 style={{ color: "#b45309", fontSize: "2rem", marginBottom: "1rem", textAlign: "center" }}>Gallery</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "1rem" }}>
-          <img src="/images/sample1.jpg" alt="Venkama Talli 1" style={{ width: "100%", borderRadius: "15px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", objectFit: "cover", height: "180px" }} />
-          <img src="/images/sample2.jpg" alt="Venkama Talli 2" style={{ width: "100%", borderRadius: "15px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", objectFit: "cover", height: "180px" }} />
-          <div style={{ backgroundColor: "#fbbf24", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center", fontWeight: "700", color: "#78350f", fontSize: "1.25rem", height: "180px" }}>
-            Upload Image Here
-          </div>
-        </div>
-      </section>
-      
-      {/* Map */}
-      <section style={{ maxWidth: "700px", margin: "0 auto 4rem auto", textAlign: "center" }}>
-        <h2 style={{ color: "#b45309", fontSize: "2rem", marginBottom: "1rem" }}>Temple Location</h2>
-        <iframe
-          title="Venkama Talli Temple Location"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15299.415527059408!2d80.5729205!3d16.0185362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a170033973281%3A0xfcc233b429b18b68!2sVENKAMMA%20TALLI%20TEMPLE!5e0!3m2!1sen!2sin!4v1716830000000!5m2!1sen!2sin"
-          width="100%"
-          height="350"
-          style={{ border: 0, borderRadius: "12px" }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-      
-      {/* Footer */}
-      <footer style={{ textAlign: "center", padding: "1rem", backgroundColor: "#b45309", color: "#fff", fontWeight: "600" }}>
-        &copy; 2025 Venkama Talli Temple. All rights reserved.
-      </footer>
+<header>
+  <h1>వెంకమ్మ తల్లి దేవస్థానం  <small>Venkamma Talli Temple</small></h1>
+</header>
+
+<main>
+
+<section id="about">
+  <h2>సంప్రదాయ వివరణ</h2>
+  <p>వెంకమ్మ తల్లి దేవస్థానం ఈ గ్రామానికి ఆధ్యాత్మిక శక్తి మరియు సౌభాగ్యాన్ని ప్రసాదించే ప్రసిద్ధ దేవాలయం. ఇక్కడ భక్తులు శాంతి మరియు ఆశీర్వాదాల కోసం తరచుగా పూజలు నిర్వహిస్తారు.</p>
+</section>
+
+<section id="highlights">
+  <h2>విశేషతలు</h2>
+  <p>
+    - ప్రతి శుక్రవారం ప్రత్యేక పూజలు<br />
+    - వార్షిక ఉత్సవాలు & మేళాలు<br />
+    - సౌకర్యవంతమైన ప్రాంగణం మరియు పర్యాటకుల కోసం సౌకర్యాలు
+  </p>
+</section>
+
+<section id="gallery">
+  <h2>ఫోటోలు</h2>
+  <div class="photos">
+    <img src="kd1.jpg" alt="Venkamma Talli Temple 1" />
+    <img src="kd3.jpg" alt="Venkamma Talli Temple 2" />
     </div>
-  );
-}
+</section>
+
+<section class="audio-button">
+  <button onclick="document.getElementById('bellSound').play()">🔔 ఆలయ మణిహారం</button>
+</section>
+
+<audio id="bellSound" preload="auto">
+  <source src="https://actions.google.com/sounds/v1/bells/hindu_temple_bell.ogg" type="audio/ogg" />
+  Your browser does not support the audio element.
+</audio>
+
+<section id="location">
+  <h2>ప్రదేశం</h2>
+  <iframe
+    src="https://maps.app.goo.gl/q7zqcvDKG5issDaB6"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    >
+  </iframe>
+</section>
+
+</main>
+
+<footer>
+  &copy; 2025 Venkamma Talli Temple. All Rights Reserved.
+</footer>
+
+</body>
+</html>
