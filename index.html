@@ -1,98 +1,73 @@
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 export default function VenkamaTalliHomePage() {
   return (
-    <div className="bg-gradient-to-br from-yellow-50 to-red-100 min-h-screen text-gray-800">
-      {/* Hero Section */}
-      <header className="text-center py-16 px-4 bg-gradient-to-r from-red-200 to-yellow-100 shadow-md">
-        <h1 className="text-5xl font-bold text-red-700 mb-4 drop-shadow">
-          Welcome to Venkama Talli Temple - Komali
+    <div style={{ fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", background: "linear-gradient(135deg, #fef3c7 0%, #f97316 100%)", minHeight: "100vh", color: "#4b2e05", padding: "2rem" }}>
+      
+      {/* Header */}
+      <header style={{ textAlign: "center", marginBottom: "3rem" }}>
+        <h1 style={{ fontSize: "3rem", fontWeight: "700", textShadow: "2px 2px 6px rgba(0,0,0,0.15)" }}>
+          🙏 Welcome to Venkama Talli Temple Komali 🙏
         </h1>
-        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-          A sacred space to learn about the divine blessings of Venkama Talli and stay connected with our traditions.
+        <p style={{ fontSize: "1.25rem", maxWidth: "600px", margin: "1rem auto", lineHeight: "1.6" }}>
+          A sacred place to find peace, blessings, and connect with the divine mother goddess, Venkama Talli.
         </p>
       </header>
-
+      
       {/* About Section */}
-      <section className="px-6 py-12 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold text-red-600 mb-4">About Venkama Talli</h2>
-        <p className="text-lg leading-relaxed text-gray-700">
-          Venkama Talli is revered as a powerful mother goddess, believed to bestow protection, prosperity, and peace upon her devotees. Her legacy is rooted deeply in the hearts of the local community, with traditions carried forward for generations.
+      <section style={{ maxWidth: "700px", margin: "0 auto 4rem auto", background: "rgba(255,255,255,0.85)", borderRadius: "12px", padding: "1.5rem", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
+        <h2 style={{ color: "#b45309", fontSize: "2rem", marginBottom: "1rem" }}>About Venkama Talli</h2>
+        <p style={{ fontSize: "1.125rem", lineHeight: "1.6" }}>
+          Venkama Talli is the divine mother goddess worshipped for protection, prosperity, and peace. 
+          The temple has been a spiritual center for generations, fostering devotion and community bonding.
         </p>
       </section>
-
-      {/* Timings Section */}
-      <section className="bg-yellow-50 py-12 px-6">
-        <h2 className="text-3xl font-semibold text-red-600 text-center mb-8">Temple Timings</h2>
-        <div className="flex flex-col md:flex-row justify-center gap-8">
-          <Card className="bg-white shadow-md">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2 text-red-700">Morning Pooja</h3>
-              <p>6:00 AM - 8:00 AM</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-md">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2 text-red-700">Evening Pooja</h3>
-              <p>6:00 PM - 8:00 PM</p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="px-6 py-12 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-semibold text-red-600 mb-6">Gallery</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <img src="/images/sample1.jpg" alt="Venkama Talli 1" className="rounded-xl shadow-md object-cover h-60 w-full" />
-          <img src="/images/sample2.jpg" alt="Venkama Talli 2" className="rounded-xl shadow-md object-cover h-60 w-full" />
-          <div className="bg-white rounded-xl shadow-md h-60 flex items-center justify-center text-gray-400">
-            Upload Image 3
+      
+      {/* Timings */}
+      <section style={{ maxWidth: "700px", margin: "0 auto 4rem auto", textAlign: "center" }}>
+        <h2 style={{ color: "#b45309", fontSize: "2rem", marginBottom: "1rem" }}>Temple Timings</h2>
+        <div style={{ display: "flex", justifyContent: "center", gap: "3rem", fontWeight: "600" }}>
+          <div style={{ background: "white", padding: "1rem 2rem", borderRadius: "10px", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
+            Morning Pooja<br />
+            <span style={{ color: "#d97706", fontSize: "1.25rem" }}>6:00 AM - 8:00 AM</span>
+          </div>
+          <div style={{ background: "white", padding: "1rem 2rem", borderRadius: "10px", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
+            Evening Pooja<br />
+            <span style={{ color: "#d97706", fontSize: "1.25rem" }}>6:00 PM - 8:00 PM</span>
           </div>
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      <section className="px-6 py-12 bg-white max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold text-red-600 mb-6 text-center">Devotee Testimonials</h2>
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="bg-red-50 p-6 rounded-xl shadow">
-            <p className="italic text-gray-700">
-              "Ever since I visited Venkama Talli, I have felt a powerful peace in my life. Her blessings are real."
-            </p>
-            <p className="mt-4 font-semibold text-red-700">– Suresh R., Devotee</p>
-          </div>
-          <div className="bg-red-50 p-6 rounded-xl shadow">
-            <p className="italic text-gray-700">
-              "My family's prayers were answered after we offered pooja here. A divine experience I'll never forget."
-            </p>
-            <p className="mt-4 font-semibold text-red-700">– Lakshmi P., Visitor</p>
+      
+      {/* Gallery */}
+      <section style={{ maxWidth: "900px", margin: "0 auto 4rem auto" }}>
+        <h2 style={{ color: "#b45309", fontSize: "2rem", marginBottom: "1rem", textAlign: "center" }}>Gallery</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "1rem" }}>
+          <img src="/images/sample1.jpg" alt="Venkama Talli 1" style={{ width: "100%", borderRadius: "15px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", objectFit: "cover", height: "180px" }} />
+          <img src="/images/sample2.jpg" alt="Venkama Talli 2" style={{ width: "100%", borderRadius: "15px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", objectFit: "cover", height: "180px" }} />
+          <div style={{ backgroundColor: "#fbbf24", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center", fontWeight: "700", color: "#78350f", fontSize: "1.25rem", height: "180px" }}>
+            Upload Image Here
           </div>
         </div>
       </section>
-
-      {/* Map Section */}
-      <section className="px-6 py-12 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold text-red-600 mb-6 text-center">Temple Location</h2>
-        <div className="rounded-xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15299.415527059408!2d80.5729205!3d16.0185362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a170033973281%3A0xfcc233b429b18b68!2sVENKAMMA%20TALLI%20TEMPLE!5e0!3m2!1sen!2sin!4v1716830000000!5m2!1sen!2sin"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Venkamma Talli Temple Location"
-          ></iframe>
-        </div>
+      
+      {/* Map */}
+      <section style={{ maxWidth: "700px", margin: "0 auto 4rem auto", textAlign: "center" }}>
+        <h2 style={{ color: "#b45309", fontSize: "2rem", marginBottom: "1rem" }}>Temple Location</h2>
+        <iframe
+          title="Venkama Talli Temple Location"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15299.415527059408!2d80.5729205!3d16.0185362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a170033973281%3A0xfcc233b429b18b68!2sVENKAMMA%20TALLI%20TEMPLE!5e0!3m2!1sen!2sin!4v1716830000000!5m2!1sen!2sin"
+          width="100%"
+          height="350"
+          style={{ border: 0, borderRadius: "12px" }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
-
+      
       {/* Footer */}
-      <footer className="bg-red-700 text-white text-center py-6">
-        <p>&copy; 2025 Venkama Talli Temple. All rights reserved.</p>
+      <footer style={{ textAlign: "center", padding: "1rem", backgroundColor: "#b45309", color: "#fff", fontWeight: "600" }}>
+        &copy; 2025 Venkama Talli Temple. All rights reserved.
       </footer>
     </div>
   );
