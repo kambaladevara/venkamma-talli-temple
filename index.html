@@ -1,119 +1,67 @@
-<!DOCTYPE html>
-<html lang="te">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>వెంకమ్మ తల్లి ఆలయం - కోమలి</title>
-<style>
-  body {
-    font-family: 'Noto Sans Telugu', serif;
-    margin: 0; padding: 0;
-    background: #fff8f0;
-    color: #4b2e05;
-  }
-  header {
-    background: #7a2a0d;
-    color: #fff;
-    padding: 1.5rem 1rem;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2.4rem;
-  }
-  main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  section {
-    margin-bottom: 2rem;
-  }
-  h3 {
-    color: #a64d00;
-    border-bottom: 2px solid #a64d00;
-    padding-bottom: 0.3rem;
-  }
-  img.temple-photo {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 1rem;
-    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
-  }
-  footer {
-    background: #7a2a0d;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-  iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px #ccc;
-  }
-  /* Responsive */
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 1.8rem;
-    }
-  }
-</style>
-<!-- Link to Telugu font -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap" rel="stylesheet" />
-</head>
-<body>
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
-<header>
-  <h1>వెంకమ్మ తల్లి ఆలయం - కోమలి</h1>
-</header>
+export default function VenkamaTalliHomePage() {
+  return (
+    <div className="bg-gradient-to-br from-yellow-50 to-red-100 min-h-screen text-gray-800">
+      {/* Hero Section */}
+      <header className="text-center py-16 px-4 bg-gradient-to-r from-red-200 to-yellow-100 shadow-md">
+        <h1 className="text-5xl font-bold text-red-700 mb-4 drop-shadow">
+          Welcome to Venkama Talli
+        </h1>
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+          A sacred space to learn about the divine blessings of Venkama Talli and stay connected with our traditions.
+        </p>
+      </header>
 
-<main>
+      {/* About Section */}
+      <section className="px-6 py-12 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-semibold text-red-600 mb-4">About Venkama Talli</h2>
+        <p className="text-lg leading-relaxed text-gray-700">
+          Venkama Talli is revered as a powerful mother goddess, believed to bestow protection, prosperity, and peace upon her devotees. Her legacy is rooted deeply in the hearts of the local community, with traditions carried forward for generations.
+        </p>
+      </section>
 
-  <section>
-    <h3>ఆలయం గురించి</h3>
-    <p>వెంకమ్మ తల్లి ఆలయం ఆంధ్రప్రదేశ్‌లోని కోమలి గ్రామంలో ఉన్న పవిత్రమైన ఆలయం. పండుగల సమయంలో భక్తులు ఆశీర్వాదాలు పొందడానికి సందర్శిస్తారు.</p>
-  </section>
+      {/* Timings Section */}
+      <section className="bg-yellow-50 py-12 px-6">
+        <h2 className="text-3xl font-semibold text-red-600 text-center mb-8">Temple Timings</h2>
+        <div className="flex flex-col md:flex-row justify-center gap-8">
+          <Card className="bg-white shadow-md">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-2 text-red-700">Morning Pooja</h3>
+              <p>6:00 AM - 8:00 AM</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-2 text-red-700">Evening Pooja</h3>
+              <p>6:00 PM - 8:00 PM</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
 
-  <section>
-    <h3>ఆలయ చిత్రాలు</h3>
-    <p>మీ ఆలయ చిత్రాలను <strong>photos</strong> ఫోల్డర్లో అప్‌లోడ్ చేసి, ఇక్కడ చిత్రం లింకులను జోడించండి:</p>
-    <div>
-      <!-- ఇక్కడ మీ చిత్రాల లింకులు ఇవ్వండి -->
-      <img class="temple-photo" src="photos/photo1.jpg" alt="వెంకమ్మ తల్లి ఆలయం చిత్రం 1" />
-      <img class="temple-photo" src="photos/photo2.jpg" alt="వెంకమ్మ తల్లి ఆలయం చిత్రం 2" />
+      {/* Gallery Section */}
+      <section className="px-6 py-12 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-semibold text-red-600 mb-6">Gallery</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="bg-white rounded-xl shadow-md h-60 flex items-center justify-center text-gray-400">
+            Upload Image 1
+          </div>
+          <div className="bg-white rounded-xl shadow-md h-60 flex items-center justify-center text-gray-400">
+            Upload Image 2
+          </div>
+          <div className="bg-white rounded-xl shadow-md h-60 flex items-center justify-center text-gray-400">
+            Upload Image 3
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-red-700 text-white text-center py-6">
+        <p>&copy; 2025 Venkama Talli Temple. All rights reserved.</p>
+      </footer>
     </div>
-  </section>
-
-  <section>
-    <h3>స్థలం</h3>
-    <p>కోమలి గ్రామం, ఆంధ్రప్రదేశ్, భారతదేశం.</p>
-       <h3>నక్షేపటము</h3>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.367793773401!2d81.6581907!3d16.8534543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35c1d8b37d4cf3%3A0x2c683666d4108af5!2sKomali%2C%20Andhra%20Pradesh%20534421%2C%20India!5e0!3m2!1sen!2sus!4v1693521228465!5m2!1sen!2sus"
-      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-
-  <section>
-    <h3>సంప్రదింపు</h3>
-    <p>ఏమైనా ప్రశ్నల కోసం ఆలయ కమిటీ లేదా గ్రామ పెద్దలతో సంప్రదించండి.</p>
-  </section>
-
-</main>
-
-<footer>
-  &copy; 2025 వెంకమ్మ తల్లి ఆలయం, కోమలి
-</footer>
-<button onclick="document.getElementById('temple-sound').play()">🔔 Play Bell Sound</button>
-
-<audio id="temple-sound" loop>
-  <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg" />
-  Your browser does not support the audio element.
-</audio>
-
-
-
-</body>
-</html>
+  );
+}
