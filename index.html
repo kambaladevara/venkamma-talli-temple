@@ -46,15 +46,47 @@ export default function VenkamaTalliHomePage() {
       <section className="px-6 py-12 max-w-6xl mx-auto">
         <h2 className="text-3xl font-semibold text-red-600 mb-6">Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-xl shadow-md h-60 flex items-center justify-center text-gray-400">
-            Upload Image 1
-          </div>
-          <div className="bg-white rounded-xl shadow-md h-60 flex items-center justify-center text-gray-400">
-            Upload Image 2
-          </div>
+          <img src="/images/sample1.jpg" alt="Venkama Talli 1" className="rounded-xl shadow-md object-cover h-60 w-full" />
+          <img src="/images/sample2.jpg" alt="Venkama Talli 2" className="rounded-xl shadow-md object-cover h-60 w-full" />
           <div className="bg-white rounded-xl shadow-md h-60 flex items-center justify-center text-gray-400">
             Upload Image 3
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="px-6 py-12 bg-white max-w-5xl mx-auto">
+        <h2 className="text-3xl font-semibold text-red-600 mb-6 text-center">Devotee Testimonials</h2>
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="bg-red-50 p-6 rounded-xl shadow">
+            <p className="italic text-gray-700">
+              "Ever since I visited Venkama Talli, I have felt a powerful peace in my life. Her blessings are real."
+            </p>
+            <p className="mt-4 font-semibold text-red-700">– Suresh R., Devotee</p>
+          </div>
+          <div className="bg-red-50 p-6 rounded-xl shadow">
+            <p className="italic text-gray-700">
+              "My family's prayers were answered after we offered pooja here. A divine experience I'll never forget."
+            </p>
+            <p className="mt-4 font-semibold text-red-700">– Lakshmi P., Visitor</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="px-6 py-12 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-semibold text-red-600 mb-6 text-center">Temple Location</h2>
+        <div className="rounded-xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15299.415527059408!2d80.5729205!3d16.0185362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a170033973281%3A0xfcc233b429b18b68!2sVENKAMMA%20TALLI%20TEMPLE!5e0!3m2!1sen!2sin!4v1716830000000!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Venkamma Talli Temple Location"
+          ></iframe>
         </div>
       </section>
 
